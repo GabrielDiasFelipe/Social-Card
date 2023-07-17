@@ -1,0 +1,34 @@
+
+    
+@keyframes cardSocial {
+    from{clip-path: circle(3.5% at 94.5% 14%);;
+    }
+}
+
+@keyframes cardGit  {
+    to{clip-path: circle(100%);
+    }
+    from{clip-path: circle(4% at 79.4% 87%);}
+}
+
+@keyframes cardLinkedin  {
+    to{clip-path: circle(100%);
+    }
+
+    from{clip-path: circle(4% at 87% 87%);
+    }
+}
+
+@keyframes cardTwitter {
+    to{
+       clip-path: circle(100%);
+    }
+    from{ 
+        clip-path: circle(4% at 94.3% 86%);
+        }
+}
+
+
+@mixin animation ($card){
+    animation: $card 3s ease-in-out forwards;
+}

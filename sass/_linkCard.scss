@@ -1,0 +1,17 @@
+
+$Textcolor:#ffffff;
+$Background:linear-gradient(to bottom ,#1158C7,#0D419D);
+$buttonBackground:#ffffff;
+$buttonText:black;
+
+#linkCard{
+
+    @include Card;
+    display: none;
+    position: absolute;
+    @include animation(cardLinkedin );
+    #iconLinkedin{
+        filter: invert(1);
+        
+    }
+}

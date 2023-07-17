@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, white, rgba(0, 0, 0, 0.398));
+}
+
+@keyframes cardSocial {
+  from {
+    clip-path: circle(3.5% at 94.5% 14%);
+  }
+}
+@keyframes cardGit {
+  to {
+    clip-path: circle(100%);
+  }
+  from {
+    clip-path: circle(4% at 79.4% 87%);
+  }
+}
+@keyframes cardLinkedin {
+  to {
+    clip-path: circle(100%);
+  }
+  from {
+    clip-path: circle(4% at 87% 87%);
+  }
+}
+@keyframes cardTwitter {
+  to {
+    clip-path: circle(100%);
+  }
+  from {
+    clip-path: circle(4% at 94.3% 86%);
+  }
+}
+#socialCard {
+  position: absolute;
+  display: block;
+  max-width: 800px;
+  margin: 0 25px;
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 15px;
+  background: 0;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.343);
+  animation: cardSocial 3s ease-in-out 1ms forwards paused;
+}
+#socialCard h1 {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 450;
+  color: #2F2F32;
+  font-size: 30px;
+}
+#socialCard h2 {
+  font-family: "Varela Round", sans-serif;
+  color: #2F2F32;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+#socialCard p {
+  display: block;
+  text-align: justify;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #2F2F32;
+}
+#socialCard button {
+  margin-top: 20px;
+  background-color: #236B8C;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  font-size: 17px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+#socialCard button:hover {
+  background-color: #206280;
+}
+
+#gitCard {
+  display: block;
+  max-width: 800px;
+  margin: 0 25px;
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(to top, #553098, #6E40C9);
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.343);
+  position: absolute;
+  display: none;
+  animation: cardGit 3s ease-in-out forwards;
+}
+#gitCard h1 {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 450;
+  color: #ffffff;
+  font-size: 30px;
+}
+#gitCard h2 {
+  font-family: "Varela Round", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+#gitCard p {
+  display: block;
+  text-align: justify;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+#gitCard button {
+  margin-top: 20px;
+  background-color: #5C6BC0;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  font-size: 17px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+#gitCard button:hover {
+  background-color: #5161bc;
+}
+#gitCard #iconGit {
+  filter: brightness(2);
+}
+
+#linkCard {
+  display: block;
+  max-width: 800px;
+  margin: 0 25px;
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #1158C7, #0D419D);
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.343);
+  display: none;
+  position: absolute;
+  animation: cardLinkedin 3s ease-in-out forwards;
+}
+#linkCard h1 {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 450;
+  color: #ffffff;
+  font-size: 30px;
+}
+#linkCard h2 {
+  font-family: "Varela Round", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+#linkCard p {
+  display: block;
+  text-align: justify;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+#linkCard button {
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  font-size: 17px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+#linkCard button:hover {
+  background-color: #f7f7f7;
+}
+#linkCard #iconLinkedin {
+  filter: invert(1);
+}
+
+#twitterCard {
+  display: block;
+  max-width: 800px;
+  margin: 0 25px;
+  font-size: 20px;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(to bottom, #049DBF, #0388A6);
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.343);
+  position: absolute;
+  display: none;
+  animation: cardTwitter 3s ease-in-out forwards;
+}
+#twitterCard h1 {
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 450;
+  color: #ffffff;
+  font-size: 30px;
+}
+#twitterCard h2 {
+  font-family: "Varela Round", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+#twitterCard p {
+  display: block;
+  text-align: justify;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+#twitterCard button {
+  margin-top: 20px;
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  font-size: 17px;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+#twitterCard button:hover {
+  background-color: #f7f7f7;
+}
+#twitterCard #iconTwitter {
+  filter: invert(1);
+}
+
+menu {
+  display: flex;
+  width: 190px;
+  float: right;
+  justify-content: space-between;
+  align-items: center;
+}
+menu img {
+  width: 30px;
+  filter: brightness(0);
+  cursor: pointer;
+}
+menu img:hover {
+  transition: 0.3s;
+  filter: brightness(1);
+}
+
+#home {
+  display: inline;
+  float: right;
+  width: 30px;
+  filter: invert(0);
+  cursor: pointer;
+}
+#home:hover {
+  transition: 0.4s;
+  filter: invert(1);
+}
+
+/*# sourceMappingURL=styles.css.map */

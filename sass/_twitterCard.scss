@@ -1,0 +1,18 @@
+
+$Textcolor:#ffffff;
+$Background:linear-gradient(to bottom ,#049DBF,#0388A6);
+$buttonBackground:#ffffff;
+$buttonText:black;
+
+#twitterCard{
+    
+    @include Card;
+    position: absolute;
+    display: none;
+    @include animation(cardTwitter );
+    #iconTwitter{
+        filter: invert(1);
+        
+        
+    }
+}

@@ -1,0 +1,50 @@
+$Background: 0;
+$buttonText:white;
+@mixin Card{
+        display: block;
+        max-width: 800px;
+        margin: 0 25px;
+        font-size: 20px;
+        padding: 30px;
+        border-radius: 15px;
+        background: $Background;
+        box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.343);
+    
+        h1{
+    
+            font-family: 'Lato' , Arial, Helvetica, sans-serif;
+            font-weight: 450;
+            color: $Textcolor;
+            font-size: 30px;
+        }
+        h2{
+            font-family: 'Varela Round', sans-serif;
+            color: $Textcolor;
+            font-weight: bold;
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        p{
+            display: block;
+            text-align: justify;
+            font-family: 'Lato' , Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            color: $Textcolor;
+        }
+        button{
+            margin-top: 20px;
+            background-color: $buttonBackground;
+            color: $buttonText;
+            padding: 10px 20px;
+            border-radius: 15px;
+            border: none;
+    
+            font-size: 17px;
+            font-family: 'Lato' , Arial, Helvetica, sans-serif;
+    
+            &:hover{
+                background-color: darken($buttonBackground,3%); 
+            }
+        }
+    }

@@ -1,0 +1,9 @@
+$buttonBackground:#236B8C;
+$Textcolor:#2F2F32;
+
+
+#socialCard{
+   position: absolute;
+   @include Card;
+   animation :cardSocial 3s ease-in-out  1ms forwards paused;
+}

@@ -1,0 +1,16 @@
+
+$Textcolor:#ffffff;
+$Background: linear-gradient(to top ,#553098,#6E40C9);
+$buttonBackground:#5C6BC0;
+
+
+#gitCard{
+    @include Card;
+    position: absolute;
+    display: none;
+    @include animation(cardGit); 
+    #iconGit{
+        filter: brightness(2);
+    }
+
+}
